@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		261C49231F215A6500FC8D74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 261C49221F215A6500FC8D74 /* AppDelegate.m */; };
+		261C49261F215A6500FC8D74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 261C49251F215A6500FC8D74 /* main.m */; };
+		261C492B1F215A6500FC8D74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261C492A1F215A6500FC8D74 /* Assets.xcassets */; };
+		261C495C1F215AFA00FC8D74 /* ACI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C49351F215AFA00FC8D74 /* ACI.cpp */; };
+		261C495D1F215AFA00FC8D74 /* Apple1VideoTerminal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C49371F215AFA00FC8D74 /* Apple1VideoTerminal.cpp */; };
+		261C495E1F215AFA00FC8D74 /* ASCIIKeyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C49391F215AFA00FC8D74 /* ASCIIKeyboard.cpp */; };
+		261C495F1F215AFA00FC8D74 /* CPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C493B1F215AFA00FC8D74 /* CPU.cpp */; };
+		261C49601F215AFA00FC8D74 /* Display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C493D1F215AFA00FC8D74 /* Display.cpp */; };
+		261C49611F215AFA00FC8D74 /* Emulator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 261C49401F215AFA00FC8D74 /* Emulator.mm */; };
+		261C49621F215AFA00FC8D74 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 261C49421F215AFA00FC8D74 /* MainViewController.m */; };
+		261C49631F215AFA00FC8D74 /* MemoryInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C49441F215AFA00FC8D74 /* MemoryInterface.cpp */; };
+		261C49641F215AFA00FC8D74 /* MemoryMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C49461F215AFA00FC8D74 /* MemoryMap.cpp */; };
+		261C49651F215AFA00FC8D74 /* MOS6502.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C49481F215AFA00FC8D74 /* MOS6502.cpp */; };
+		261C49661F215AFA00FC8D74 /* Motorola6820.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C494A1F215AFA00FC8D74 /* Motorola6820.cpp */; };
+		261C49671F215AFA00FC8D74 /* Peripheral.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C494C1F215AFA00FC8D74 /* Peripheral.cpp */; };
+		261C49681F215AFA00FC8D74 /* PETDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C494E1F215AFA00FC8D74 /* PETDisplay.cpp */; };
+		261C49691F215AFA00FC8D74 /* PETIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C49501F215AFA00FC8D74 /* PETIO.cpp */; };
+		261C496A1F215AFA00FC8D74 /* RAM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C49521F215AFA00FC8D74 /* RAM.cpp */; };
+		261C496B1F215AFA00FC8D74 /* ROM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C49541F215AFA00FC8D74 /* ROM.cpp */; };
+		261C496C1F215AFA00FC8D74 /* TelnetServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C49561F215AFA00FC8D74 /* TelnetServer.cpp */; };
+		261C496D1F215AFA00FC8D74 /* VideoMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261C49591F215AFA00FC8D74 /* VideoMemory.cpp */; };
+		261C49731F215B6500FC8D74 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261C49721F215B6500FC8D74 /* OpenGL.framework */; };
+		261C49751F215B6B00FC8D74 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261C49741F215B6B00FC8D74 /* CoreAudio.framework */; };
+		261C49771F215B6F00FC8D74 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261C49761F215B6F00FC8D74 /* AudioUnit.framework */; };
+		261C497A1F215E4000FC8D74 /* wozaci.rom in Resources */ = {isa = PBXBuildFile; fileRef = 261C49781F215E4000FC8D74 /* wozaci.rom */; };
+		261C497B1F215E4000FC8D74 /* wozmon.rom in Resources */ = {isa = PBXBuildFile; fileRef = 261C49791F215E4000FC8D74 /* wozmon.rom */; };
+		262A17311F21E75B00F49D30 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 262A17301F21E75B00F49D30 /* README.md */; };
+		262A17331F21E77600F49D30 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 262A17321F21E77600F49D30 /* LICENSE */; };
+		26534F831F21D33500D6144E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26534F821F21D33500D6144E /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		261C491E1F215A6500FC8D74 /* VirtA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		261C49211F215A6500FC8D74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		261C49221F215A6500FC8D74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		261C49251F215A6500FC8D74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		261C492A1F215A6500FC8D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		261C492F1F215A6500FC8D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		261C49351F215AFA00FC8D74 /* ACI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACI.cpp; sourceTree = "<group>"; };
+		261C49361F215AFA00FC8D74 /* ACI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACI.h; sourceTree = "<group>"; };
+		261C49371F215AFA00FC8D74 /* Apple1VideoTerminal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Apple1VideoTerminal.cpp; sourceTree = "<group>"; };
+		261C49381F215AFA00FC8D74 /* Apple1VideoTerminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apple1VideoTerminal.h; sourceTree = "<group>"; };
+		261C49391F215AFA00FC8D74 /* ASCIIKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ASCIIKeyboard.cpp; sourceTree = "<group>"; };
+		261C493A1F215AFA00FC8D74 /* ASCIIKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCIIKeyboard.h; sourceTree = "<group>"; };
+		261C493B1F215AFA00FC8D74 /* CPU.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPU.cpp; sourceTree = "<group>"; };
+		261C493C1F215AFA00FC8D74 /* CPU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPU.h; sourceTree = "<group>"; };
+		261C493D1F215AFA00FC8D74 /* Display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Display.cpp; sourceTree = "<group>"; };
+		261C493E1F215AFA00FC8D74 /* Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Display.h; sourceTree = "<group>"; };
+		261C493F1F215AFA00FC8D74 /* Emulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emulator.h; sourceTree = "<group>"; };
+		261C49401F215AFA00FC8D74 /* Emulator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Emulator.mm; sourceTree = "<group>"; };
+		261C49411F215AFA00FC8D74 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		261C49421F215AFA00FC8D74 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		261C49431F215AFA00FC8D74 /* Memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
+		261C49441F215AFA00FC8D74 /* MemoryInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryInterface.cpp; sourceTree = "<group>"; };
+		261C49451F215AFA00FC8D74 /* MemoryInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryInterface.h; sourceTree = "<group>"; };
+		261C49461F215AFA00FC8D74 /* MemoryMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryMap.cpp; sourceTree = "<group>"; };
+		261C49471F215AFA00FC8D74 /* MemoryMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryMap.h; sourceTree = "<group>"; };
+		261C49481F215AFA00FC8D74 /* MOS6502.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MOS6502.cpp; sourceTree = "<group>"; };
+		261C49491F215AFA00FC8D74 /* MOS6502.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOS6502.h; sourceTree = "<group>"; };
+		261C494A1F215AFA00FC8D74 /* Motorola6820.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Motorola6820.cpp; sourceTree = "<group>"; };
+		261C494B1F215AFA00FC8D74 /* Motorola6820.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motorola6820.h; sourceTree = "<group>"; };
+		261C494C1F215AFA00FC8D74 /* Peripheral.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Peripheral.cpp; sourceTree = "<group>"; };
+		261C494D1F215AFA00FC8D74 /* Peripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peripheral.h; sourceTree = "<group>"; };
+		261C494E1F215AFA00FC8D74 /* PETDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PETDisplay.cpp; sourceTree = "<group>"; };
+		261C494F1F215AFA00FC8D74 /* PETDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PETDisplay.h; sourceTree = "<group>"; };
+		261C49501F215AFA00FC8D74 /* PETIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PETIO.cpp; sourceTree = "<group>"; };
+		261C49511F215AFA00FC8D74 /* PETIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PETIO.h; sourceTree = "<group>"; };
+		261C49521F215AFA00FC8D74 /* RAM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RAM.cpp; sourceTree = "<group>"; };
+		261C49531F215AFA00FC8D74 /* RAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAM.h; sourceTree = "<group>"; };
+		261C49541F215AFA00FC8D74 /* ROM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ROM.cpp; sourceTree = "<group>"; };
+		261C49551F215AFA00FC8D74 /* ROM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROM.h; sourceTree = "<group>"; };
+		261C49561F215AFA00FC8D74 /* TelnetServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TelnetServer.cpp; sourceTree = "<group>"; };
+		261C49571F215AFA00FC8D74 /* TelnetServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelnetServer.h; sourceTree = "<group>"; };
+		261C49581F215AFA00FC8D74 /* Terminal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terminal.h; sourceTree = "<group>"; };
+		261C49591F215AFA00FC8D74 /* VideoMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoMemory.cpp; sourceTree = "<group>"; };
+		261C495A1F215AFA00FC8D74 /* VideoMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoMemory.h; sourceTree = "<group>"; };
+		261C495B1F215AFA00FC8D74 /* VideoOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoOutput.h; sourceTree = "<group>"; };
+		261C49721F215B6500FC8D74 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		261C49741F215B6B00FC8D74 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		261C49761F215B6F00FC8D74 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		261C49781F215E4000FC8D74 /* wozaci.rom */ = {isa = PBXFileReference; lastKnownFileType = file; path = wozaci.rom; sourceTree = "<group>"; };
+		261C49791F215E4000FC8D74 /* wozmon.rom */ = {isa = PBXFileReference; lastKnownFileType = file; path = wozmon.rom; sourceTree = "<group>"; };
+		262A17301F21E75B00F49D30 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		262A17321F21E77600F49D30 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		26534F821F21D33500D6144E /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		261C491B1F215A6500FC8D74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261C49731F215B6500FC8D74 /* OpenGL.framework in Frameworks */,
+				261C49771F215B6F00FC8D74 /* AudioUnit.framework in Frameworks */,
+				261C49751F215B6B00FC8D74 /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		261C49151F215A6500FC8D74 = {
+			isa = PBXGroup;
+			children = (
+				262A17321F21E77600F49D30 /* LICENSE */,
+				262A17301F21E75B00F49D30 /* README.md */,
+				261C49201F215A6500FC8D74 /* VirtA */,
+				261C491F1F215A6500FC8D74 /* Products */,
+				261C49711F215B6500FC8D74 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		261C491F1F215A6500FC8D74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				261C491E1F215A6500FC8D74 /* VirtA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		261C49201F215A6500FC8D74 /* VirtA */ = {
+			isa = PBXGroup;
+			children = (
+				26534F821F21D33500D6144E /* MainMenu.xib */,
+				261C49781F215E4000FC8D74 /* wozaci.rom */,
+				261C49791F215E4000FC8D74 /* wozmon.rom */,
+				261C49351F215AFA00FC8D74 /* ACI.cpp */,
+				261C49361F215AFA00FC8D74 /* ACI.h */,
+				261C49371F215AFA00FC8D74 /* Apple1VideoTerminal.cpp */,
+				261C49381F215AFA00FC8D74 /* Apple1VideoTerminal.h */,
+				261C49391F215AFA00FC8D74 /* ASCIIKeyboard.cpp */,
+				261C493A1F215AFA00FC8D74 /* ASCIIKeyboard.h */,
+				261C493B1F215AFA00FC8D74 /* CPU.cpp */,
+				261C493C1F215AFA00FC8D74 /* CPU.h */,
+				261C493D1F215AFA00FC8D74 /* Display.cpp */,
+				261C493E1F215AFA00FC8D74 /* Display.h */,
+				261C493F1F215AFA00FC8D74 /* Emulator.h */,
+				261C49401F215AFA00FC8D74 /* Emulator.mm */,
+				261C49411F215AFA00FC8D74 /* MainViewController.h */,
+				261C49421F215AFA00FC8D74 /* MainViewController.m */,
+				261C49431F215AFA00FC8D74 /* Memory.h */,
+				261C49441F215AFA00FC8D74 /* MemoryInterface.cpp */,
+				261C49451F215AFA00FC8D74 /* MemoryInterface.h */,
+				261C49461F215AFA00FC8D74 /* MemoryMap.cpp */,
+				261C49471F215AFA00FC8D74 /* MemoryMap.h */,
+				261C49481F215AFA00FC8D74 /* MOS6502.cpp */,
+				261C49491F215AFA00FC8D74 /* MOS6502.h */,
+				261C494A1F215AFA00FC8D74 /* Motorola6820.cpp */,
+				261C494B1F215AFA00FC8D74 /* Motorola6820.h */,
+				261C494C1F215AFA00FC8D74 /* Peripheral.cpp */,
+				261C494D1F215AFA00FC8D74 /* Peripheral.h */,
+				261C494E1F215AFA00FC8D74 /* PETDisplay.cpp */,
+				261C494F1F215AFA00FC8D74 /* PETDisplay.h */,
+				261C49501F215AFA00FC8D74 /* PETIO.cpp */,
+				261C49511F215AFA00FC8D74 /* PETIO.h */,
+				261C49521F215AFA00FC8D74 /* RAM.cpp */,
+				261C49531F215AFA00FC8D74 /* RAM.h */,
+				261C49541F215AFA00FC8D74 /* ROM.cpp */,
+				261C49551F215AFA00FC8D74 /* ROM.h */,
+				261C49561F215AFA00FC8D74 /* TelnetServer.cpp */,
+				261C49571F215AFA00FC8D74 /* TelnetServer.h */,
+				261C49581F215AFA00FC8D74 /* Terminal.h */,
+				261C49591F215AFA00FC8D74 /* VideoMemory.cpp */,
+				261C495A1F215AFA00FC8D74 /* VideoMemory.h */,
+				261C495B1F215AFA00FC8D74 /* VideoOutput.h */,
+				261C49211F215A6500FC8D74 /* AppDelegate.h */,
+				261C49221F215A6500FC8D74 /* AppDelegate.m */,
+				261C492A1F215A6500FC8D74 /* Assets.xcassets */,
+				261C492F1F215A6500FC8D74 /* Info.plist */,
+				261C49241F215A6500FC8D74 /* Supporting Files */,
+			);
+			path = VirtA;
+			sourceTree = "<group>";
+		};
+		261C49241F215A6500FC8D74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				261C49251F215A6500FC8D74 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		261C49711F215B6500FC8D74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				261C49761F215B6F00FC8D74 /* AudioUnit.framework */,
+				261C49741F215B6B00FC8D74 /* CoreAudio.framework */,
+				261C49721F215B6500FC8D74 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		261C491D1F215A6500FC8D74 /* VirtA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261C49321F215A6500FC8D74 /* Build configuration list for PBXNativeTarget "VirtA" */;
+			buildPhases = (
+				261C491A1F215A6500FC8D74 /* Sources */,
+				261C491B1F215A6500FC8D74 /* Frameworks */,
+				261C491C1F215A6500FC8D74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VirtA;
+			productName = VirtA;
+			productReference = 261C491E1F215A6500FC8D74 /* VirtA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		261C49161F215A6500FC8D74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Lionel Pinkhard";
+				TargetAttributes = {
+					261C491D1F215A6500FC8D74 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 261C49191F215A6500FC8D74 /* Build configuration list for PBXProject "VirtA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 261C49151F215A6500FC8D74;
+			productRefGroup = 261C491F1F215A6500FC8D74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				261C491D1F215A6500FC8D74 /* VirtA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		261C491C1F215A6500FC8D74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261C492B1F215A6500FC8D74 /* Assets.xcassets in Resources */,
+				261C497A1F215E4000FC8D74 /* wozaci.rom in Resources */,
+				261C497B1F215E4000FC8D74 /* wozmon.rom in Resources */,
+				26534F831F21D33500D6144E /* MainMenu.xib in Resources */,
+				262A17331F21E77600F49D30 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		261C491A1F215A6500FC8D74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261C496A1F215AFA00FC8D74 /* RAM.cpp in Sources */,
+				261C495E1F215AFA00FC8D74 /* ASCIIKeyboard.cpp in Sources */,
+				261C49641F215AFA00FC8D74 /* MemoryMap.cpp in Sources */,
+				262A17311F21E75B00F49D30 /* README.md in Sources */,
+				261C496B1F215AFA00FC8D74 /* ROM.cpp in Sources */,
+				261C49651F215AFA00FC8D74 /* MOS6502.cpp in Sources */,
+				261C495D1F215AFA00FC8D74 /* Apple1VideoTerminal.cpp in Sources */,
+				261C49601F215AFA00FC8D74 /* Display.cpp in Sources */,
+				261C49691F215AFA00FC8D74 /* PETIO.cpp in Sources */,
+				261C496D1F215AFA00FC8D74 /* VideoMemory.cpp in Sources */,
+				261C49621F215AFA00FC8D74 /* MainViewController.m in Sources */,
+				261C49671F215AFA00FC8D74 /* Peripheral.cpp in Sources */,
+				261C49661F215AFA00FC8D74 /* Motorola6820.cpp in Sources */,
+				261C49631F215AFA00FC8D74 /* MemoryInterface.cpp in Sources */,
+				261C495F1F215AFA00FC8D74 /* CPU.cpp in Sources */,
+				261C495C1F215AFA00FC8D74 /* ACI.cpp in Sources */,
+				261C49261F215A6500FC8D74 /* main.m in Sources */,
+				261C496C1F215AFA00FC8D74 /* TelnetServer.cpp in Sources */,
+				261C49231F215A6500FC8D74 /* AppDelegate.m in Sources */,
+				261C49681F215AFA00FC8D74 /* PETDisplay.cpp in Sources */,
+				261C49611F215AFA00FC8D74 /* Emulator.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		261C49301F215A6500FC8D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		261C49311F215A6500FC8D74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		261C49331F215A6500FC8D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VirtA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lpinkhard.VirtA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		261C49341F215A6500FC8D74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VirtA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lpinkhard.VirtA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		261C49191F215A6500FC8D74 /* Build configuration list for PBXProject "VirtA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261C49301F215A6500FC8D74 /* Debug */,
+				261C49311F215A6500FC8D74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		261C49321F215A6500FC8D74 /* Build configuration list for PBXNativeTarget "VirtA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261C49331F215A6500FC8D74 /* Debug */,
+				261C49341F215A6500FC8D74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 261C49161F215A6500FC8D74 /* Project object */;
+}

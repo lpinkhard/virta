@@ -2,6 +2,8 @@
 
 Apple I Emulator for Mac
 
+[![Virta.png](https://i.postimg.cc/L88wC0f7/Virta.png)](https://postimg.cc/TpBth0tq)
+
 ## Features
 
 * MOS 6502 CPU emulation
